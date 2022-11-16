@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="css/phone2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navbar {
+            background-color: black;
+            width: 100%;
+            height: 70px;
+            color: white;
+        }
+
+        .back {
+            width: 100px;
+
+            padding-top: 25px;
+            padding-left: 5px;
+
+        }
+
+        .back a {
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 3px;
+            padding: 4px;
+            font-weight: bold;
+        }
+
+        .img {
+            margin: auto;
+            width: 500px;
+            margin-top: 40px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            color: red;
+            margin-top: 30px;
+        }
+
+        .line {
+            height: 3px;
+            width: 40px;
+            background-color: green;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .pythonabout {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .pythonabout p {
+            font-size: 20px;
+            text-align: justify;
+
+        }
+
+        footer {
+            height: 200px;
+            background-color: rgb(41, 39, 39);
+
+        }
+
+        .footcon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .footcon h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footcon p {
+            color: rgb(165, 165, 165);
+
+        }
+
+        .top {
+            display: inline;
+            float: right;
+            width: 100%;
+            background-color: rgb(41, 39, 39);
+        }
+
+        .top2 {
+            float: right;
+            background-color: white;
+            margin: 0 20px 20px 0;
+            padding: 15px 10px 15px 10px;
+            border-radius: 10px;
+            font-weight: bolder;
+            color: black;
+            text-decoration: none;
+        }
+
+        .top2 a:hover {
+            background-color: rgb(190, 187, 192);
+        }
+
+        .dj-img img {
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .dj-img {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .head2 {
+            color: red;
+            margin: 20px 0 20px 0;
+        }
+
+        .video {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .video a img {
+            width: 400px;
+            height: 300px;
+            margin: 15px 15px 15px 15px;
+        }
+    
+
+
+        @media only screen and (max-width: 672px) {
+            .img {
+                width: 460px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 556px) {
+            .video a img {
+            width: 360px;
+
+        }
+
+        @media only screen and (max-width: 470px) {
+            .img {
+                width: 390px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+
+            .dj-img img {
+                width: 370px;
+                margin: 0 auto;
+            }
+            .video a img {
+            width: 370px;
+            height: 400px;
+        }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .img {
+                width: 320px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+
+            .dj-img img {
+                width: 300px;
+                margin: 0 auto;
+            }
+            .video a img {
+            width: 300px;
+            height: 320px;
+        }
+        }
+
+        @media only screen and (max-width: 344px) {
+            .img {
+                width: 280px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+
+            .dj-img img {
+                width: 250px;
+                margin: 0 auto;
+            }
+            .video a img {
+            width: 250px;
+           height: 270px;
+        }
+        }
+
+
+        @media only screen and (max-width: 672px) {
+            .img {
+                width: 460px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            .img {
+                width: 390px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .img {
+                width: 320px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 340px) {
+            .img {
+                width: 280px;
+            }
+
+            .img img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="back"><a href="index.html"> back &larr;</a>
+        </div>
+    </nav>
+    <div class="head">
+        <h1>Python</h1>
+    </div>
+    <div class="line"></div>
+    <div class="img">
+        <img src="images/code1.jpg" alt="" class="img1">
+    </div>
+    <div class="pythonabout">
+        <p>Python is one of the most popular language dolor sit amet consectetur adipisicing elit. Laborum voluptatum
+            libero eaque
+            omnis esse qui eum deleniti odit! Similique ea iusto rem modi temporibus vero? Totam quaerat
+            delectus enim perferendis ullam impedit dolore voluptatem Lorem ipsum dolor sit amet, consectetur
+            adipisicing
+            elit. Similique, architecto! Voluptatibus in est repudiandae suscipit dolor earum! Incidunt sit maxime,
+            dolore
+            magni iure odio ad repellat et ipsum, adipisci temporibus. Aut a minus ipsa, voluptatem omnis sequi velit,
+            in
+            maiores unde et sunt labore vitae magni fugiat, cupiditate quae facilis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aspernatur nihil corporis eveniet. Corrupti
+            ipsavoluptatibus dolor sed veritatis quaerat esse nobis asperiores debitis iusto, suscipit pariatur dolores
+            natus
+            consectetur quam similique aliquam adipisci fugiat culpa temporibus est facilis, repudiandae autem?
+            Possimus,
+            eius nemo facere voluptatum sed amet eum! Est ipsa accusamus debitis quod omnis! Temporibus eum voluptas
+            iste
+            velit, illo expedita qui at, accusantium dolor sint architecto voluptatibus dicta accusamus quaerat
+            inventore
+            consequuntur libero fuga beatae. Voluptatum quis totam nostrum nisi error accusamus quos animi sapiente vero
+            accusantium iste, maiores perferendis dignissimos iure. Accusantium minus saepe veritatis officia aspernatur
+        </p>
+
+        <br>
+        <h1 class="head2">Data structure and algorithms</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptatum libero eaque
+            omnis esse qui eum deleniti odit! Similique ea iusto rem modi temporibus vero? Totam quaerat
+            delectus enim perferendis ullam impedit dolore voluptatem Lorem ipsum dolor sit amet, consectetur
+            adipisicing
+            elit. Similique, architecto! Voluptatibus in est repudiandae suscipit dolor earum! Incidunt sit maxime,
+            dolore
+            magni iure odio ad repellat et ipsum, adipisci temporibus. Aut a minus ipsa, voluptatem omnis sequi velit,
+            in
+            maiores unde et sunt labore vitae magni fugiat, cupiditate quae facilis. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Ullam aspernatur nihil corporis eveniet. Corrupti ipsa
+            voluptatibus dolor sed veritatis quaerat esse nobis asperiores debitis iusto, suscipit pariatur dolores
+            natus
+            consectetur quam similique aliquam adipisci fugiat culpa temporibus est facilis, repudiandae autem?
+            Possimus,
+            eius nemo facere voluptatum sed amet eum! Est ipsa accusamus debitis quod omnis! Temporibus eum voluptas
+            iste
+            velit, illo expedita qui at, accusantium dolor sint architecto voluptatibus dicta accusamus quaerat
+            inventore
+            consequuntur libero fuga beatae. Voluptatum quis totam nostrum nisi error accusamus quos animi sapiente vero
+            accusantium iste, maiores perferendis dignissimos iure. Accusantium minus saepe veritatis officia aspernatur
+        </p>
+        <h1 class="head2">Django</h1>
+        <div class="dj-img">
+            <img src="images/django2.png" alt="" class="img1">
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptatum libero eaque
+                omnis esse qui eum deleniti odit! Similique ea iusto rem modi temporibus vero? Totam quaerat
+                delectus enim perferendis ullam impedit dolore voluptatem Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Similique, architecto! Voluptatibus in est repudiandae suscipit dolor earum! Incidunt sit maxime,
+                dolore
+                magni iure odio ad repellat et ipsum, adipisci temporibus. Aut a minus ipsa, voluptatem omnis sequi
+                velit, in
+                maiores unde et sunt labore vitae magni fugiat, cupiditate quae facilis. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Ullam aspernatur nihil corporis eveniet. Corrupti ipsa
+                voluptatibus dolor sed veritatis quaerat esse nobis asperiores debitis iusto, suscipit pariatur dolores
+                natus
+                consectetur quam similique aliquam adipisci fugiat culpa temporibus est facilis, repudiandae autem?
+                Possimus,
+                eius nemo facere voluptatum sed amet eum! Est ipsa accusamus debitis quod omnis! Temporibus eum voluptas
+                iste
+                velit, illo expedita qui at, accusantium dolor sint architecto voluptatibus dicta accusamus quaerat
+                inventore
+                consequuntur libero fuga beatae. Voluptatum quis totam nostrum nisi error accusamus quos animi sapiente
+                vero
+                accusantium iste, maiores perferendis dignissimos iure. Accusantium minus saepe veritatis officia
+                aspernatur</p>
+        </div>
+
+    </div>
+    <div class="video">
+        <a href="https://youtu.be/gfDE2a7MKjA">
+            <img src="images/python-video.png" alt="">
+        </a>
+        <a href="https://youtu.be/5BDgKJFZMl8">
+            <img src="images/django-video.png" alt="">
+        </a>
+    </div>
+    <Footer>
+        <div class="footcon">
+            <h3>coding world</h3>
+            <p>@copyright 2019-2020</p>
+            <P id="forlast">Allright reserved powered by the <span style="color: white;"> Aftab
+                    tamboli</span></P>
+        </div>
+    </Footer>
+    <div class="top"><a href="#top">
+            <div class="top2"> Top &#8607;</div>
+        </a></div>
+
+</body>
+
+</html>

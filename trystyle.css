@@ -60,7 +60,7 @@ li a:hover{
 }
 .firstsection ::before{
     content: "";
-    background: url('../images/tra1.jpg') no-repeat center center/cover;
+    background: url('tra1.jpg') no-repeat center center/cover;
     position: absolute;
     left: 0;
     top:0;
